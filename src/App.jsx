@@ -19,6 +19,7 @@ function App() {
       .then((data) => {
         if (data.insertedId) {
           alert("user added successfully");
+          form.reset();
           console.log(data);
         }
       });
